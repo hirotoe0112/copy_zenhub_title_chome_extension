@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "copy zenhub title",
+    "description": "zenhubのタイトルをコピーするボタンを表示する",
+    "version": "1.0.0",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://app.zenhub.com/workspaces/*"],
+            "js": ["script.js"],
+            "css": ["script.css"]
+        }
+    ]
+}
